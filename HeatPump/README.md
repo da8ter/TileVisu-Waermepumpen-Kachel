@@ -22,11 +22,11 @@ Anzeige von aktuellen Werten einer Wärempumpe.
 ### 3. Software-Installation
 
 * Über das Module Control folgende URL hinzufügen
-https://github.com/da8ter/TileVisu-Kachelsammlung.git
+https://github.com/da8ter/TileVisu-Waermepumpen-Kachel.git
 
 ### 4. Einrichten der Instanzen in IP-Symcon
 
- Unter 'Instanz hinzufügen' kann die Wärempumpenkachel mithilfe des Schnellfilters gefunden werden. (Suchbegriff: TileVisuHeatPump)
+ Unter 'Instanz hinzufügen' kann die Wärempumpenkachel mithilfe des Schnellfilters gefunden werden.
 	- Weitere Informationen zum Hinzufügen von Instanzen in der [Dokumentation der Instanzen](https://www.symcon.de/service/dokumentation/konzepte/instanzen/#Instanz_hinzufügen)
 
 __Konfigurationsseite__:
