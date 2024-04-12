@@ -21,6 +21,7 @@ Anzeige von aktuellen Werten einer Wärempumpe.
 
 ### 3. Software-Installation
 
+* Über den Module Store
 * Über das Module Control folgende URL hinzufügen
 https://github.com/da8ter/TileVisu-Waermepumpen-Kachel.git
 
