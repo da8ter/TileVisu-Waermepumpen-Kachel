@@ -1,6 +1,6 @@
 <?php
 
-    class TileVisuHeatPump extends IPSModule
+    class TileVisuHeatPumpTile extends IPSModule
     {
         
         public function Create() {

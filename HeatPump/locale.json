@@ -1,6 +1,7 @@
 {
     "translations": {
         "de": { 
+            "TileVisu Heat Pump Tile": "TileVisu Wärmepumpen Kachel",    
             "Tile configuration:": "Kachelkonfiguration:",
             "Heat pump status and modes:": "Wärmepumpenstatus und Modus:",
             "Status:": "Status:",

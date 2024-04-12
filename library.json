@@ -1,8 +1,8 @@
 {
-    "id": "{0FD76DFF-025C-F13E-15FA-0C6084FE11BA}",
-    "name": "TileVisu Kachelsammlung",
+    "id": "{4BFBE368-76EF-F821-64F1-20B45F011FDA}",
+    "name": "TileVisu Wärmepumpen Kachel",
     "author": "Stephan Sprick",
-    "url": "https://github.com/da8ter/TileVisu-Kachelsammlung.git",
+    "url": "https://github.com/da8ter/TileVisu-Waermepumpen-Kachel.git",
     "compatibility": {
         "version": "7.1"
     },
