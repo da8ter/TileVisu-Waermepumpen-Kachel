@@ -28,7 +28,7 @@ https://github.com/da8ter/TileVisu-Waermepumpen-Kachel.git
  Unter 'Instanz hinzufügen' kann die Wärempumpenkachel mithilfe des Schnellfilters gefunden werden.
 	- Weitere Informationen zum Hinzufügen von Instanzen in der [Dokumentation der Instanzen](https://www.symcon.de/service/dokumentation/konzepte/instanzen/#Instanz_hinzufügen)
 
-### 5. KAchelkonfiguration
+### 5. Kachelkonfiguration
 
 Über das Konfigurationsformular können alle Variablen konfiguriert werden. Nicht konfigurierte Werte werden in der Kachel ausgeblendet.
 
