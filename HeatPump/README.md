@@ -8,9 +8,7 @@ Eine Kachel für die IPSymcon Tile Visualisation um den aktuellen Betriebsstatus
 2. [Voraussetzungen](#2-voraussetzungen)
 3. [Software-Installation](#3-software-installation)
 4. [Einrichten der Instanzen in IP-Symcon](#4-einrichten-der-instanzen-in-ip-symcon)
-5. [Statusvariablen und Profile](#5-statusvariablen-und-profile)
-6. [WebFront](#6-webfront)
-7. [PHP-Befehlsreferenz](#7-php-befehlsreferenz)
+5. [Kachelkonfiguration](#5-Kachelkonfiguration)
 
 ### 1. Funktionsumfang
 Anzeige von aktuellen Werten einer Wärempumpe.
@@ -30,7 +28,7 @@ https://github.com/da8ter/TileVisu-Waermepumpen-Kachel.git
  Unter 'Instanz hinzufügen' kann die Wärempumpenkachel mithilfe des Schnellfilters gefunden werden.
 	- Weitere Informationen zum Hinzufügen von Instanzen in der [Dokumentation der Instanzen](https://www.symcon.de/service/dokumentation/konzepte/instanzen/#Instanz_hinzufügen)
 
-__Konfigurationsseite__:
+### 5. KAchelkonfiguration
 
 Über das Konfigurationsformular können alle Variablen konfiguriert werden. Nicht konfigurierte Werte werden in der Kachel ausgeblendet.
 
