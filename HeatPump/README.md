@@ -33,7 +33,7 @@ https://github.com/da8ter/TileVisu-Waermepumpen-Kachel.git
 Über das Konfigurationsformular können alle Variablen konfiguriert werden. Nicht konfigurierte Werte werden in der Kachel ausgeblendet.
 
 Gültig für alle Variablen:
-Alle Variablen (außer Bool) benötigen ein Variablenprofil mit entsprechenden Suffix wie z.B. °C oder Watt und je nach belieben die Anzal der Nachkommastellen. Alle Werte werden in der Kachel so abgebildet wie das Variablenprofil es vorgibt.
+Alle Variablen (außer Bool) benötigen ein Variablenprofil mit entsprechenden Suffix wie z.B. °C oder Watt und je nach belieben die Anzahl der Nachkommastellen. Alle Werte werden in der Kachel so abgebildet wie das Variablenprofil es vorgibt.
 
 Status:
 Benötigt eine Integer-Variable mit maximal 10 Werten. Text und Farben werden aus dem Variablenprofil ausgelesen.
