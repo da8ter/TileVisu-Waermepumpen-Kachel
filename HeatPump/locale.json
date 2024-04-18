@@ -39,7 +39,7 @@
             "Hot water temperature:": "Warmwassertemperatur:",
             "Flow temperature:": "Vorlauftemperatur:",
             "Return temperature:": "Rücklauftemperatur:",
-            "Heater Rods:": "Heizstäbe",
+            "Heater Rods:": "Heizstäbe:",
             "Backup Heater status:": "Heizstab Wärmepumpe:",
             "HWT Heating rod 1 status:": "Heizstab Warmwasser 1:",
             "HWT Heating rod 2 status:": "Heizstab Warmwasser 2:",
@@ -54,8 +54,8 @@
             "Color 2": "Farbe 2",
             "Today:": "Heute:",
             "Temp:": "Temp:",
-            "HP: ": "WP:",
-            "HWT: ": "WW-Speicher:",
+            "HP:&nbsp;": "WP:&nbsp;",
+            "HWT:&nbsp;": "WW-Speicher:&nbsp;",
             "Donations / Gifts": "Spenden / Schenkungen",
             "Say thank you and support the developer of this module:": "Sag Danke und unterstütze den Entwickler dieses Moduls:"
         }
