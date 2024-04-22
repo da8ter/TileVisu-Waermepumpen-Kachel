@@ -2,6 +2,8 @@
 Eine Kachel für die IPSymcon Tile Visualisation um den aktuellen Betriebsstatus einer Wärmepumpe zu visualisieren.
 ![Wärmepumpen-Kachel](https://github.com/da8ter/images/blob/main/heatpump_kachel.png)
 
+Support: https://community.symcon.de/t/html-kachelsammlung-bewohnerstatus-waermepumpe-etc/
+
 ### Inhaltsverzeichnis
 
 1. [Funktionsumfang](#1-funktionsumfang)
