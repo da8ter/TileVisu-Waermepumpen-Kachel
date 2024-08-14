@@ -427,7 +427,7 @@
                 <tr id="heizstaebe" class="hidden">
                     <td style="padding-right: 10px;"><span class="hz_alle">Heater Rods:</span></td>
                     <td>
-                        <span id="heizstab_backup" class="hidden"><i class="fa-light fa-fan fa-sm icon fa-fw"></i>&nbsp;<span class="hz_wp_backup">HP:<span>&nbsp;</span><i id="heaterrodbackupstatus" class="fa-light fa-circle fa-sm icon fa-fw"></i></span></span>
+                        <span id="heizstab_backup" class="hidden"><i class="fa-light fa-fan fa-sm icon fa-fw"></i>&nbsp;<span class="hz_wp_backup">HP:<span>&nbsp;</span><i id="heaterrodbackupstatus" class="fa-light fa-circle-bolt fa-sm icon fa-fw"></i></span></span>
                         <span id="heizstab_ww" class="hidden"><i class="fa-light fa-droplet fa-sm icon fa-fw"></i>HWT:<span>&nbsp;</span><i id="heaterrodphase1" class="fa-light fa-circle fa-sm icon fa-fw hidden"></i>
                             <i id="heaterrodphase2" class="fa-light fa-circle fa-sm icon fa-fw hidden"></i>
                             <i id="heaterrodphase3" class="fa-light fa-circle fa-sm icon fa-fw hidden"></i>
@@ -499,12 +499,12 @@
 
 
                         if (data.Value) {
-                            divElement.classList.remove('fa-regular');
-                            divElement.classList.add('fa-light');
+                            divElement.classList.remove('fa-circle');
+                            divElement.classList.add('fa-circle-bolt');
                         }
                         else {
-                            divElement.classList.remove('fa-light');
-                            divElement.classList.add('fa-regular');
+                            divElement.classList.remove('fa-circle-bolt');
+                            divElement.classList.add('fa-circle');
                         }
                         break;
 
@@ -515,12 +515,12 @@
                         document.getElementById("heizstab_ww").className = 'heizstaebe_ww';
                         divElement.classList.remove('hidden');
                         if (data.Value) {
-                            divElement.classList.remove('fa-regular');
-                            divElement.classList.add('fa-light');
+                            divElement.classList.remove('fa-circle');
+                            divElement.classList.add('fa-circle-bolt');
                         }
                         else {
-                            divElement.classList.remove('fa-light');
-                            divElement.classList.add('fa-regular');
+                            divElement.classList.remove('fa-circle-bolt');
+                            divElement.classList.add('fa-circle');
                         }
                         break;
 
