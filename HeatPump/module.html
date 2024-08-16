@@ -499,12 +499,14 @@
 
 
                         if (data.Value) {
-                            divElement.classList.remove('fa-circle');
-                            divElement.classList.add('fa-circle-bolt');
+                            divElement.setAttribute('data-icon', 'circle-bolt');
+                            //divElement.classList.remove('fa-circle');
+                            //divElement.classList.add('fa-circle-bolt');
                         }
                         else {
-                            divElement.classList.remove('fa-circle-bolt');
-                            divElement.classList.add('fa-circle');
+                            divElement.setAttribute('data-icon', 'circle');
+                            //divElement.classList.remove('fa-circle-bolt');
+                            //divElement.classList.add('fa-circle');
                         }
                         break;
 
