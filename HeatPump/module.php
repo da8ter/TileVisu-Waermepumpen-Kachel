@@ -29,6 +29,7 @@ class TileVisuHeatPumpTile extends IPSModule
         $this->RegisterPropertyInteger('Power', 0);
         $this->RegisterPropertyInteger('Consumption', 0);
         $this->RegisterPropertyInteger('ConsumptionToday', 0);
+        $this->RegisterPropertyInteger('HeatProcudtionToday', 0);
         $this->RegisterPropertyString('Statusimage0', 'wp_aus');
         $this->RegisterPropertyString('Statusimage1', 'wp_aus');
         $this->RegisterPropertyString('Statusimage2', 'wp_aus');
@@ -84,6 +85,7 @@ class TileVisuHeatPumpTile extends IPSModule
             $this->ReadPropertyInteger('Power'),
             $this->ReadPropertyInteger('Consumption'),
             $this->ReadPropertyInteger('ConsumptionToday'),
+            $this->ReadPropertyInteger('HeatProcudtionToday'),
             $this->ReadPropertyInteger('bgImage')
         ];
         $refs = $this->GetReferenceList();
@@ -103,7 +105,7 @@ class TileVisuHeatPumpTile extends IPSModule
             }
         }
 
-        foreach (['Status', 'Mode', 'OutdoorTemperature', 'WaterTemperature', 'FlowTemperature', 'ReturnTemperature', 'HeaterRodBackupStatus', 'HeaterRodPhase1', 'HeaterRodPhase2', 'HeaterRodPhase3', 'Flow', 'FanRotations', 'CompressorPower', 'COP', 'SPF', 'SPFHeating', 'SPFCooling', 'SPFWater', 'Power', 'Consumption', 'ConsumptionToday'] as $HeatPumpProperty) {
+        foreach (['Status', 'Mode', 'OutdoorTemperature', 'WaterTemperature', 'FlowTemperature', 'ReturnTemperature', 'HeaterRodBackupStatus', 'HeaterRodPhase1', 'HeaterRodPhase2', 'HeaterRodPhase3', 'Flow', 'FanRotations', 'CompressorPower', 'COP', 'SPF', 'SPFHeating', 'SPFCooling', 'SPFWater', 'Power', 'Consumption', 'ConsumptionToday', 'HeatProcudtionToday'] as $HeatPumpProperty) {
             $this->RegisterMessage($this->ReadPropertyInteger($HeatPumpProperty), VM_UPDATE);
         }
         $this->UpdateVisualizationValue($this->GetVisualizationTile());
@@ -112,7 +114,7 @@ class TileVisuHeatPumpTile extends IPSModule
 
     public function MessageSink($TimeStamp, $SenderID, $Message, $Data)
     {
-        foreach (['Status', 'Mode', 'OutdoorTemperature', 'WaterTemperature', 'FlowTemperature', 'ReturnTemperature', 'HeaterRodBackupStatus', 'HeaterRodPhase1', 'HeaterRodPhase2', 'HeaterRodPhase3', 'Flow', 'FanRotations', 'CompressorPower', 'COP', 'SPF', 'SPFHeating', 'SPFCooling', 'SPFWater', 'Power', 'Consumption', 'ConsumptionToday'] as $index => $HeatPumpProperty) {
+        foreach (['Status', 'Mode', 'OutdoorTemperature', 'WaterTemperature', 'FlowTemperature', 'ReturnTemperature', 'HeaterRodBackupStatus', 'HeaterRodPhase1', 'HeaterRodPhase2', 'HeaterRodPhase3', 'Flow', 'FanRotations', 'CompressorPower', 'COP', 'SPF', 'SPFHeating', 'SPFCooling', 'SPFWater', 'Power', 'Consumption', 'ConsumptionToday', 'HeatProcudtionToday'] as $index => $HeatPumpProperty) {
             if ($SenderID === $this->ReadPropertyInteger($HeatPumpProperty)) {
                 switch ($Message) {
                     case VM_UPDATE:
@@ -164,7 +166,8 @@ class TileVisuHeatPumpTile extends IPSModule
             array('Name' => 'SPFWater', 'VariableID' => $this->ReadPropertyInteger('SPFWater')),
             array('Name' => 'Power', 'VariableID' => $this->ReadPropertyInteger('Power')),
             array('Name' => 'Consumption', 'VariableID' => $this->ReadPropertyInteger('Consumption')),
-            array('Name' => 'ConsumptionToday', 'VariableID' => $this->ReadPropertyInteger('ConsumptionToday'))
+            array('Name' => 'ConsumptionToday', 'VariableID' => $this->ReadPropertyInteger('ConsumptionToday')),
+            array('Name' => 'HeatProcudtionToday', 'VariableID' => $this->ReadPropertyInteger('HeatProcudtionToday'))
         );
 
         foreach ($childs as $child) {

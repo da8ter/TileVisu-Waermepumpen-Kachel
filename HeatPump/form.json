@@ -458,8 +458,8 @@
             "items": [
                 {
                     "type": "SelectVariable",
-                    "name": "ProcudtionToday",
-                    "caption": "Production Today:",
+                    "name": "HeatProcudtionToday",
+                    "caption": "Heat Production Today:",
                     "validVariableTypes": [
                         1,
                         2
