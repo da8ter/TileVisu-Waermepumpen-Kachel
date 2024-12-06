@@ -422,7 +422,7 @@
         },
         {
             "type": "Label",
-            "caption": "Power consumption",
+            "caption": "Power consumption:",
             "bold": true
         },
         {
@@ -450,7 +450,7 @@
         },
         {
             "type": "Label",
-            "caption": "Heat production",
+            "caption": "Heat production:",
             "bold": true
         },
         {
