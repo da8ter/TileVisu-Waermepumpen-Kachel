@@ -458,18 +458,13 @@
             "items": [
                 {
                     "type": "SelectVariable",
-                    "name": "HeatProcudtionLifetime",
+                    "name": "HeatProductionLifetime",
                     "caption": "Heat Production Lifetime:",
                     "validVariableTypes": [
                         1,
                         2
                     ]
-                }
-            ]
-        },
-        {
-            "type": "RowLayout",
-            "items": [
+                },
                 {
                     "type": "SelectVariable",
                     "name": "HeatProcudtionToday",
