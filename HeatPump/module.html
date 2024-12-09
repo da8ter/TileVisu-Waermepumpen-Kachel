@@ -447,11 +447,12 @@
     </div>
     <script type="text/javascript" charset="UTF-8"> 
         function handleMessage(message) {
-            console.log('Rohdaten empfangen:',message);
+            
             const data = JSON.parse(message);
             const divID = data.Ident.toLowerCase();
             const value = data.result;
             const divElement = document.getElementById(divID);
+            console.log('Rohdaten empfangen:',divElement);
             const divElementBalken = document.getElementById(divID + '_div');
             if (divElement) {
                 switch (data.Ident) {
@@ -486,6 +487,7 @@
                         divElement.textContent = data.ValueFormatted;
                         modediv.className = 'modediv';
                         break;
+
                     case 'HeatProductionLifetime':
 
                         document.getElementById("heatproduction_row").className = 'heatproduction_row';
