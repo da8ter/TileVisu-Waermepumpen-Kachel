@@ -169,7 +169,7 @@ class TileVisuHeatPumpTile extends IPSModule
             array('Name' => 'Power', 'VariableID' => $this->ReadPropertyInteger('Power')),
             array('Name' => 'Consumption', 'VariableID' => $this->ReadPropertyInteger('Consumption')),
             array('Name' => 'ConsumptionToday', 'VariableID' => $this->ReadPropertyInteger('ConsumptionToday')),
-            array('Name' => 'HeatProcudtionLifetime', 'VariableID' => $this->ReadPropertyInteger('HeatProcudtionLifetime')),
+            array('Name' => 'HeatProductionLifetime', 'VariableID' => $this->ReadPropertyInteger('HeatProductionLifetime')),
             array('Name' => 'HeatProcudtionToday', 'VariableID' => $this->ReadPropertyInteger('HeatProcudtionToday'))
         );
 
