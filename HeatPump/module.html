@@ -452,7 +452,7 @@
             const divID = data.Ident.toLowerCase();
             const value = data.result;
             const divElement = document.getElementById(divID);
-            console.log('Rohdaten empfangen:',divElement);
+            console.log('Rohdaten empfangen:',data.ValueFormatted);
             const divElementBalken = document.getElementById(divID + '_div');
             if (divElement) {
                 switch (data.Ident) {
