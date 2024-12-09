@@ -86,8 +86,8 @@ class TileVisuHeatPumpTile extends IPSModule
             $this->ReadPropertyInteger('Power'),
             $this->ReadPropertyInteger('Consumption'),
             $this->ReadPropertyInteger('ConsumptionToday'),
-            $this->ReadPropertyInteger('HeatProcudtionToday'),
-            $this->ReadPropertyInteger('HeatProcudtionLifetime'),
+            $this->ReadPropertyInteger('HeatProductionToday'),
+            $this->ReadPropertyInteger('HeatProductionLifetime'),
             $this->ReadPropertyInteger('bgImage')
         ];
         $refs = $this->GetReferenceList();
@@ -107,7 +107,7 @@ class TileVisuHeatPumpTile extends IPSModule
             }
         }
 
-        foreach (['Status', 'Mode', 'OutdoorTemperature', 'WaterTemperature', 'FlowTemperature', 'ReturnTemperature', 'HeaterRodBackupStatus', 'HeaterRodPhase1', 'HeaterRodPhase2', 'HeaterRodPhase3', 'Flow', 'FanRotations', 'CompressorPower', 'COP', 'SPF', 'SPFHeating', 'SPFCooling', 'SPFWater', 'Power', 'Consumption', 'ConsumptionToday', 'HeatProcudtionToday', 'HeatProductionLifetime'] as $HeatPumpProperty) {
+        foreach (['Status', 'Mode', 'OutdoorTemperature', 'WaterTemperature', 'FlowTemperature', 'ReturnTemperature', 'HeaterRodBackupStatus', 'HeaterRodPhase1', 'HeaterRodPhase2', 'HeaterRodPhase3', 'Flow', 'FanRotations', 'CompressorPower', 'COP', 'SPF', 'SPFHeating', 'SPFCooling', 'SPFWater', 'Power', 'Consumption', 'ConsumptionToday', 'HeatProductionToday', 'HeatProductionLifetime'] as $HeatPumpProperty) {
             $this->RegisterMessage($this->ReadPropertyInteger($HeatPumpProperty), VM_UPDATE);
         }
         $this->UpdateVisualizationValue($this->GetVisualizationTile());
@@ -170,7 +170,7 @@ class TileVisuHeatPumpTile extends IPSModule
             array('Name' => 'Consumption', 'VariableID' => $this->ReadPropertyInteger('Consumption')),
             array('Name' => 'ConsumptionToday', 'VariableID' => $this->ReadPropertyInteger('ConsumptionToday')),
             array('Name' => 'HeatProductionLifetime', 'VariableID' => $this->ReadPropertyInteger('HeatProductionLifetime')),
-            array('Name' => 'HeatProcudtionToday', 'VariableID' => $this->ReadPropertyInteger('HeatProductionToday'))
+            array('Name' => 'HeatProductionToday', 'VariableID' => $this->ReadPropertyInteger('HeatProductionToday'))
         );
 
         foreach ($childs as $child) {
