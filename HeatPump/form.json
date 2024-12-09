@@ -467,7 +467,7 @@
                 },
                 {
                     "type": "SelectVariable",
-                    "name": "HeatProcudtionToday",
+                    "name": "HeatProductionToday",
                     "caption": "Heat Production Today:",
                     "validVariableTypes": [
                         1,
