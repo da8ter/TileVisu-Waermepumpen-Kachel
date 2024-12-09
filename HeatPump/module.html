@@ -404,10 +404,10 @@
                     <td>
                         <span id="heatproduction_all" class="hidden">
                             <i class="fa-light fa-bolt icon fa-fw"></i>
-                            <span id="heatproduktion_lifetime"></span><span id="heatproduktion_lifetime_value"></span>
+                            <span id="heatproduktion_lifetime">Lifetime:</span><span id="heatproduktionlifetime"></span>
                         </span>
                         <span id="heatproduction_today" class="hidden">
-                            <i class="fa-light fa-bolt icon fa-fw"></i>&nbsp;<span>Today:</span>&nbsp;<span id="heatprocudtion_today_value"></span>
+                            <i class="fa-light fa-bolt icon fa-fw"></i>&nbsp;<span>Today:</span>&nbsp;<span id="heatprocudtiontoday"></span>
                         </span>
                     </td>
                 </tr>
@@ -485,7 +485,12 @@
                         divElement.textContent = data.ValueFormatted;
                         modediv.className = 'modediv';
                         break;
+                    case 'HeatProcudtionLifetime':
 
+                        document.getElementById("heatprocudtion_row").className = 'heatprocudtion_row';
+                        document.getElementById("heatprocudtion_all").className = 'heatprocudtion_all';
+                        divElement.textContent = data.ValueFormatted;
+                        break;
                     case 'HeatProcudtionToday':
 
                         document.getElementById("heatprocudtion_row").className = 'heatprocudtion_row';
